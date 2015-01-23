@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[10pt,a4paper,sans]{moderncv}
 
 \moderncvstyle{classic}    
 \moderncvcolor{blue}  
@@ -6,18 +6,15 @@
 
 \usepackage{setspace}
 \usepackage[backend=bibtex, style=ieee]{biblatex}
-\bibliography{abbrev}
+\bibliography{tech}
 \usepackage[english]{babel}
 
 \firstname{Agata U.}
 \familyname{Kargol}
-\title{Curriculum Vitae}                
 \address{715 Harvard Avenue}{St. Louis MO 63130}
-\mobile{+1~(504)~481~1373}                          
 \email{aukargol@gmail.com}
 \email{aukargol@wustl.edu}                               
 \homepage{http://www.cse.wustl.edu/\textasciitilde{}kargola/} 
-\extrainfo{Citizenship Status: \textbf{US Citizen} }                       
                 
 %\photo[64pt][0.4pt]{example-image-a}              
                        
@@ -34,39 +31,35 @@
 \begin{document}
 \makecvtitle
 
-\vspace{-4em}
+\vspace{-3.5em}
 \section{Education}
-\cventry{2011--2015}{Master of Science in Computer Science}{}{}{\hfill 3.46/4}{\textit{Washington University in St. Louis}, St. Louis, MO \\ \textbf{Awards:} 2012 NSF Graduate Research Fellowship Recipient}
-\cventry{2007--2011}{Bachelor of Science in Computer Science}{}{}{\hfill 3.615/4}{\textit{University of Alabama}, Tuscaloosa, AL \\ \textbf{Honors:} \textit{cum laude}, University Honors Program, International Honors Program, Computer-Based Honors Program, University Fellows Experience, Dean's List \\ \textbf{Minors:} Mathematics, Computer-Based Honors Program, Telecommunication and Film}
+\cventry{May 2015}{Master of Science in Computer Science}{}{}{\hfill \textit{NSF Graduate Research Fellow}}{\textit{Washington University in St. Louis}, St. Louis, MO\\ \textbf{Select Coursework:} Advanced Mobile Robotics, Computer Vision, Computational Photography, Computational Geometry, Advanced Machine Learning}
+\cventry{May 2011}{Bachelor of Science in Computer Science}{}{}{\hfill \textit{cum laude}}{\textit{University of Alabama}, Tuscaloosa, AL \\ \textbf{Minors:} Mathematics, Computer-Based Honors Program, Telecommunication and Film }
 
 \vspace{-0.7em}
-\section{Languages}
-\cvitem{Fluent}{English, Polish}
+\section{Skills}
+\cvitem{}{
+   \begin{itemize} 
+      \item Native speaker of Polish, English
+      \item Development experience with Python, Matlab, JavaScript, C++/C
+      \item Experience with crowdsourcing, web development, user interface design frameworks
+      \item Familiarity with GNU/Linux, Robot Operating System (ROS)
+      \item Team management and organizational leadership experience
+      \item Knowledge of web backend feature development, API development, user interface design, machine learning concepts, image processing techniques, development for robots
+   \end{itemize}
+}
 
-\vspace{-0.7em}
-\section{Programming Languages}
-\cvitem{Proficient}{Python, Matlab, JavaScript,  HTML, CSS, C++, C, Bash}
-\cvitem{Familiar}{Perl, C\#, Haskell, SmallTalk, VHDL, AVR, MIPS, mySQL}
-
-\vspace{-0.7em}
-\section{Technical Skills}
-\cvitem{Frameworks}{ Amazon Mechanical Turk Framework, Django, Qt}
-\cvitem{Operating Systems}{ GNU/Linux (8 years), Windows (16 years), Mac OS X (10 years), Robot Operating System (ROS, 2 years)}
-\cvitem{Software}{ \LaTeX, Matlab, Microsoft Office Suite, Adobe Photoshop, Apple Final Cut Pro}
-\cvitem{Certifications}{ Apple Final Cut Pro 5 and 6}
-
-\vspace{-0.7em}
+\vspace{-2.0em}
 \section{Professional Experience}
-\cventry{2012-2015}{Student Researcher, Dr. Robert Pless}{Washington Univ. in St. Louis}{}{}{\small Worked with the Archive of Many Outdoor Scenes (AMOS), the world's largest archive of public outdoor webcams, which contains over 500 million images. \vspace{0.3em} \\
+\cventry{2012-2015}{Graduate Research Assistant, Dr. Robert Pless}{Washington Univ. in St. Louis}{}{}{\small Worked with the Archive of Many Outdoor Scenes (AMOS), the world's largest archive of public outdoor webcams, which contains over 500 million images. \vspace{0.3em} \\
 %\cvitem[-1em]{}{
 \normalsize \textit{AMOS Development}
 \vspace{0.2em}
 \small
 \begin{itemize}
 	\item Built and managed AMOS crowdsourced tasks with Amazon Mechanical Turk
-	\item Built Django tools for creation and management of Mechanical Turk tasks
-	\item Developed backend features within AMOS's Django framework as part of a team
-	\item Required Python, JavaScript, HTML, CSS, Amazon Mechanical Turk, Django
+	\item Created RESTful API with Django for creation and management of Turk tasks
+	\item Developed backend features and optimizations as part of a team
 \end{itemize} \vspace{0.3em}
 %}
 %\cvitem[-1em]{}{ 
@@ -74,37 +67,24 @@
 \vspace{0.2em}
 \small
 \begin{itemize}
-	\item Explored effectiveness of existing machine learning tools and related algorithms for pedestrian detection in webcams
-	\item Improved detection algorithms through background subtraction and shadow detection methods to overcome webcam-specific problems
-	\item Required Python, Matlab, shell scripting, C++
+	\item Explored use of existing machine learning tools and algorithms for pedestrian detection in webcams
+	\item Improved detection algorithms through background subtraction and shadow detection methods
 \end{itemize}
 }
-\cventry{2011-2012}{Student Researcher, Dr. Bill Smart}{Washington Univ. in St. Louis}{}{}{Developed applications for Willow Garage's PR2 robot to allow the PR2 to act a surrogate for a paraplegic user.
+\cventry{2011-2012}{Graduate Research Assistant, Dr. Bill Smart}{Washington Univ. in St. Louis}{}{}{
 \begin{itemize}
-	\item Created point-and-click interface for object manipulation, which was designed to be incorporated into a larger software application suite
+   \item Developed point-and-click interface for object manipulation for Willow Garage's PR2 robot to allow the PR2 to act a surrogate for a paraplegic user
 	\item Learned about robot functionality and limitations, interface design based on user requirements, and the mathematical concepts of robot visual processing
 	\item Required ROS, Python, C++, Qt framework, OpenCV
 \end{itemize}
 }
 
-\cventry{2010-2011}{Student Researcher, Dr. Monica Anderson}{Univ. of Alabama}{}{} {Explored effectiveness of using robots and Python in introductory computer science class. 
+\cventry{2010-2011}{Research Assistant, Dr. Monica Anderson}{Univ. of Alabama}{}{} {
 \begin{itemize}
+   \item Explored effectiveness of using robots and Python in introductory computer science class. 
 	\item Created and supported a simplified API to control iRobot Creates
-	\item Helped teach two sections of an introductory computer science class
-	\item Required Python
 \end{itemize}
 }
-
-\vspace{-0.8em}
-\section{Awards}
-\vspace{-0.2em}
-\cvline{2012}{NSF Graduate Research Fellowship Recipient \hfill \textit{Washington Univ. in St. Louis}}
-\cvline{2011}{Dept. of Computer Science Capstone Engineering \hfill \textit{Univ. of Alabama} \newline Society Outstanding Senior}
-\cvline{2011}{ACM Chapter Outstanding Senior \hfill \textit{Univ. of Alabama }}
-\cvline{2010-2011}{NSF STEM Grant for Increasing Diversity in Computing \hfill \textit{Univ. of Alabama} }
-\cvline{2007-2011}{Academic Elite Scholarship Recipient \hfill \textit{Univ. of Alabama}}
-\cvline{2007-2011}{Drummond Company Gift  Scholarship Recipient \hfill \textit{Univ. of Alabama}}
-
 
 \vspace{-0.5em}
 \nocite{*}
@@ -113,14 +93,6 @@
 \setlength\bibitemsep{0.4em}
 \printbibliography[title=Publications]
 \endgroup
-
-\vspace{-1em}
-\section{Select Courses}
-\vspace{-0.2em}
-\cvitem{Computer Science}{Advanced Mobile Robotics, Computer Vision, Computational Photography, Computation Geometry, Computer Graphics, Advanced Machine Learning}
-\cvitem{Computer Engineering}{Computer Systems Architecture, Digital Logic, Microcomputers, Computer Architecture}
-\cvitem{Mathematics}{Calculus 1/2/3, Applied Matrix Theory, Linear Algebra, Discrete Math, Statistical Methods in Analysis, Theory of Probability}
-
 
 
 \end{document}
