@@ -1,0 +1,67 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{classic}    
+\moderncvcolor{blue}  
+\usepackage[scale=0.75]{geometry}
+
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage[backend=bibtex, style=ieee]{biblatex}
+\bibliography{tech}
+\usepackage[english]{babel}
+
+\firstname{Agata U.}
+\familyname{Kargol}
+\address{715 Harvard Avenue}{St. Louis MO 63130}
+\email{aukargol@gmail.com}
+\email{aukargol@wustl.edu}                               
+\homepage{http://www.cse.wustl.edu/\textasciitilde{}kargola/} 
+                
+    
+\makeatletter
+\renewcommand*{\makeletterclosing}{
+  \@closing\\[1em]%
+  {\large \bfseries \@firstname~\@lastname}%
+  \ifthenelse{\isundefined{\@enclosure}}{}{%
+    \\%
+    \vfill%
+    {\color{color2}\itshape\enclname: \@enclosure}}}
+\makeatother
+
+\begin{document}
+
+\recipient{SRI International}{333 Ravenswood Avenue \\ Menlo Park, CA 94025-2000}
+
+\date{January 27, 2015}
+\opening{Dear Sir or Madam,} % alternatively, recruiters name?
+\closing{Sincerely,}
+
+\makelettertitle
+\vspace{-1em}
+\justify
+I am very excited about your position open for Software Engineers with a specialization in Computer Vision and Robotics. I am hoping that you will consider me for the position. I have attached my r\'esum\'e for your consideration.
+
+\vspace{1em}
+
+I enjoy working on high-impact projects that have a chance to significantly improve people's lives. I am familiar with a variety of languages, frameworks, and libraries, including Python, C++/C, Matlab, JavaScript, HTML/CSS, AWS, Django, Qt, ROS, OpenCV, PCL, and libSVM.  I have experience working with very large real-world systems where efficiency and reliability are essential.
+
+\vspace{1em}
+
+I am a graduate student at Washington University in St. Louis, where I work with Dr. Robert Pless. As a member of Dr. Pless's lab, I work with the Archive of Many Outdoor Scenes (AMOS), the world's largest publicly available archive of outdoor webcam imagery, which currently has over 600 million images. I build tools, both crowdsourced and automated, to use AMOS imagery to gather data on the effectiveness of public health initiatives. I work on improving the accuracy of automated pedestrian detection algorithms through better feature selection, background subtraction, and shadow detection.  I am the primary developer for Amazon Mechanical Turk tasks that utilize AMOS images. I also work as part of a team working the Django backend of AMOS, developing new features and expanding the API. 
+
+\vspace{1em}
+
+I also worked with Dr. Bill Smart, working with the PR2 robot, designing a point-and-click robot control interface for picking up objects. The overarching goal of the project was to create a software suite to allow a PR2 to function as a surrogate for a paraplegic user. 
+
+
+
+\vspace{1em}
+
+At SRI International, I would bring my passion for improving lives, my diverse background, and my expertise in both Computer Vision and Robotics. I look forward to hearing from you soon.
+
+\vspace{1em}
+
+\makeletterclosing
+
+\end{document}
+
