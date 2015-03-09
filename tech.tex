@@ -2,7 +2,7 @@
 
 \moderncvstyle{classic}    
 \moderncvcolor{blue}  
-\usepackage[scale=0.75]{geometry}
+\usepackage[top=0.75in, bottom=0.75in, left=0.75in, right=0.75in, scale=0.75]{geometry}
 
 \usepackage{setspace}
 \usepackage[backend=bibtex, style=ieee]{biblatex}
@@ -11,7 +11,7 @@
 
 \firstname{Agata U.}
 \familyname{Kargol}
-\address{715 Harvard Avenue}{St. Louis MO 63130}
+\address{715 Harvard Avenue}{St. Louis, MO 63130}
 \email{aukargol@gmail.com}
 \email{aukargol@wustl.edu}                               
 \homepage{http://www.cse.wustl.edu/\textasciitilde{}kargola/} 
@@ -30,11 +30,12 @@
 
 \begin{document}
 \makecvtitle
-
 \vspace{-3.5em}
+\section{Objective}
+Seeking Software Developer position in the Seattle, WA area, where I could work on user-focused, high-impact, hands-on projects. Experienced with Python, JavaScript, Robotics, Computer Vision.
 \section{Education}
 \vspace{-0.3em}
-\cventry{May 2015}{Master of Science in Computer Science}{}{}{\hfill \textit{NSF Graduate Research Fellow}}{\textit{Washington University in St. Louis}, St. Louis, MO\\ \textbf{Select Coursework:} Advanced Mobile Robotics, Computer Vision, Computational Photography, Computational Geometry, Advanced Machine Learning}
+\cventry{May 2015}{Master of Science in Computer Science}{}{}{\hfill \textit{NSF Graduate Research Fellow}}{\textit{Washington University in St. Louis}, St. Louis, MO\\ \textbf{Select Coursework:} Mobile Robotics, Computer Vision, Computational Geometry, Machine Learning}
 \cventry{May 2011}{Bachelor of Science in Computer Science}{}{}{\hfill \textit{cum laude}}{\textit{University of Alabama}, Tuscaloosa, AL \\ \textbf{Minors:} Mathematics, Computer-Based Honors Program, Telecommunication and Film }
 
 \vspace{-0.7em}
@@ -42,31 +43,39 @@
 \vspace{-0.3em}
 \cvitem{}{
    \begin{itemize} 
-      \item Native speaker of Polish, English
+      \item Native speaker of English, Polish
       \item Development experience with Python, Matlab, JavaScript, C++/C
       \item Experience with crowdsourcing, web development, user interface design frameworks
       \item Familiarity with GNU/Linux, Robot Operating System (ROS)
       \item Team management and organizational leadership experience
-      \item Knowledge of web backend feature development, API development, user interface design, machine learning concepts, image processing techniques, development for robots
+      \item Knowledge of web backend feature development, API development, user interface design, image processing techniques, development for robots, machine learning concepts
    \end{itemize}
 }
 
 \vspace{-2.2em}
 \section{Professional Experience}
 \vspace{-0.3em}
-\cventry{2012-2015}{Graduate Research Assistant, Dr. Robert Pless}{Washington Univ. in St. Louis}{}{}{\small Worked with the Archive of Many Outdoor Scenes (AMOS), the world's largest archive of public outdoor webcams, which contains over 500 million images. \vspace{0.3em} \\
-%\cvitem[-1em]{}{
-\normalsize \textit{AMOS Development}
+\cventry{2012-2015}{Graduate Research Assistant}{Washington Univ. in St. Louis}{}{}{
+\small \vspace{-0.5em}
+\normalsize \hspace{-3em} \textit{Point-and-click Object Manipulation Interface for PR2 Robot} 
+\vspace{0.2em}
+\begin{itemize}
+   \item Developed point-and-click interface for object manipulation for Willow Garage's PR2 robot to allow the PR2 to act a surrogate for a paraplegic user
+	\item Learned about robot functionality and limitations, interface design based on user requirements, and the mathematical concepts of robot visual processing
+	\item Required ROS, Python, C++, Qt framework, OpenCV
+\end{itemize}
+\vspace{0.3em}
+\normalsize \hspace{-3em} \textit{Archive of Many Outdoor Scenes (AMOS) Development}
 \vspace{0.2em}
 \small
 \begin{itemize}
+	\item Worked AMOS, the world's largest archive of outdoor webcams, which contains over 500 million images
 	\item Built and managed AMOS crowdsourced tasks with Amazon Mechanical Turk
 	\item Created RESTful API with Django for creation and management of Turk tasks
 	\item Developed backend features and optimizations as part of a team
-\end{itemize} \vspace{0.3em}
-%}
-%\cvitem[-1em]{}{ 
-\normalsize \textit{Pedestrian Detection in Webcam Imagery for Public Health Applications} 
+\end{itemize} 
+\vspace{0.3em}
+\normalsize \hspace{-3em} \textit{Pedestrian Detection in Webcam Imagery for Public Health Applications} 
 \vspace{0.2em}
 \small
 \begin{itemize}
@@ -74,18 +83,14 @@
 	\item Improved detection algorithms through background subtraction and shadow detection methods
 \end{itemize}
 }
-\cventry{2011-2012}{Graduate Research Assistant, Dr. Bill Smart}{Washington Univ. in St. Louis}{}{}{
-\begin{itemize}
-   \item Developed point-and-click interface for object manipulation for Willow Garage's PR2 robot to allow the PR2 to act a surrogate for a paraplegic user
-	\item Learned about robot functionality and limitations, interface design based on user requirements, and the mathematical concepts of robot visual processing
-	\item Required ROS, Python, C++, Qt framework, OpenCV
-\end{itemize}
-}
 
-\cventry{2010-2011}{Research Assistant, Dr. Monica Anderson}{Univ. of Alabama}{}{} {
+\cventry{2010-2011}{Research Assistant}{Univ. of Alabama}{}{} {
+\vspace{-0.5em}
+\normalsize \hspace{-3em} \textit{Exploring Effectiveness of Using Robots to Improve Retention in Introductory CS Courses}
+\vspace{0.2em}
 \begin{itemize}
-   \item Explored effectiveness of using robots and Python in introductory computer science class. 
-	\item Created and supported a simplified API to control iRobot Creates
+\item Created a simplified Python API to control iRobot Creates to collect to data 
+\item Helped students use Python, and did on-site support and maintenance of the tools 
 \end{itemize}
 }
 
@@ -94,13 +99,14 @@
 \begingroup
 \setstretch{0.5}
 \setlength\bibitemsep{0.3em}
-\printbibliography[title=Publications]
+\printbibliography[title= Select Publications]
 \endgroup
 
 \vspace{-1.1em}
 \section{Outreach and Leadership}
 \vspace{-0.3em}
 \cvitem[0em]{2013}{Invited expert panelist on \textit{"Frameworks to Guide Image Annotations"} at \textit{SenseCam}}
+\cvitem[0em]{2012}{Participated in the PR2 Workshop held in Freiburg, Germany}
 \cvitem[0em]{2012-2013}{Held positions of President and Secretary for the Comp. Sci. Graduate Student Association}
 \cvitem[0em]{2010-2011}{Held positions of Treasurer and Vice-President for the ACM Student Chapter}
 
