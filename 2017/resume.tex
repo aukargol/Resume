@@ -1,0 +1,106 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{classic}    
+\moderncvcolor{blue}  
+\usepackage[top=0.75in, bottom=0.75in, left=0.75in, right=0.75in, scale=0.75]{geometry}
+
+\usepackage{setspace}
+\usepackage[backend=bibtex, style=ieee]{biblatex}
+\bibliography{tech}
+\usepackage[english]{babel}
+
+\firstname{Agata U.}
+\familyname{Kargol}
+\address{4555 39th Ave SW \\ Apt B418}{Seattle, WA 98116}
+\email{aukargol@gmail.com}
+                
+%\photo[64pt][0.4pt]{example-image-a}              
+                       
+\renewcommand*{\cventry}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\bfseries#3}%
+    \ifthenelse{\equal{#4}{}}{}{ \hfill{\slshape#4}}%
+    \ifthenelse{\equal{#5}{}}{}{ #5}%
+    \ifthenelse{\equal{#6}{}}{}{ #6}%
+    \strut%
+    \ifx&#7&%
+      \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
+
+\begin{document}
+\makecvtitle
+\vspace{-3em}
+\section{Objective}
+Seeking Software Developer position in the Seattle, WA area. Python 2 and 3, RESTful API development, full-stack web development, robotics, computer vision.
+\section{Education}
+\vspace{-0.3em}
+\cventry{May 2015}{Master of Science in Computer Science}{}{}{\hfill \textit{NSF Graduate Research Fellow}}{\textit{Washington University in St. Louis}, St. Louis, MO\\ \textbf{Select Coursework:} Mobile Robotics, Computer Vision, Machine Learning}
+\cventry{May 2011}{Bachelor of Science in Computer Science}{}{}{\hfill \textit{cum laude}}{\textit{University of Alabama}, Tuscaloosa, AL \\ \textbf{Minors:} Mathematics, Computer-Based Honors Program, Telecommunication and Film }
+
+\section{Skills}
+\vspace{-0.3em}
+\cvitem{Languages}{
+\begin{itemize}
+\item \textbf{Native:} English, Polish
+\item \textbf{Proficient:} Python2, Python3, JavaScript, SQL
+\item \textbf{Past:} Matlab, C, C++, bash
+\end{itemize}
+}
+\vspace{-1.2em}
+\cvitem{Frameworks}{Flask, Pyramid, Django, SQLAlchemy, alembic, pytest, pandas, celery}
+\cvitem{Technologies}{PyCharm, git (preferred), SVN, mercurial, *nix, PostgreSQL, RabbitMQ, Redis, Cassandra, Jenkins}
+\section{Professional Experience}
+\vspace{-0.3em}
+\cventry{2015-2017}{Software Development Engineer}{Zonar Systems, Inc.}{Seattle, WA}{}{
+\begin{itemize}
+\item Zonar Systems is a vehicle telematics company providing fleet management solutions. Member of Pupil Team, which focused on school bus related solutions for parents, dispatchers, and school administrators.
+\item Built \textit{MyBusVue}, a parent facing web app which provides near-real time bus tracking and student scan information.
+Architected and built RESTful API powering parent-facing web app, Android app, iOS app, as well as dispatcher tools.
+Stack: Python2 (ported to Python3), pyramid, SQLAlchemy, JavaScript, Angular 1.5, celery, Postgres, Cassandra, and Redis.
+\item Worked on \textit{Rider Verification}, a bus driver and dispatcher facing solution to provide information about where students should be in real-time. Worked on both RESTful API layer and ETL process to ingest data from multiple sources (internal and external integration). Stack includes Python3, flask, SQLAlchemy, Postgres, Angular 1.6, pandas.
+\end{itemize}
+}
+
+\cventry{2011-2015}{Graduate Research Assistant}{Washington Univ. in St. Louis}{}{}{
+	\vspace{-0.5em}
+	\normalsize \hspace{-3em} \textit{Archive of Many Outdoor Scenes (AMOS) Development}
+	\vspace{0.2em}
+	\small
+	\begin{itemize}
+		\item Worked AMOS, the world's largest archive of outdoor webcams, which contains over 500 million images
+		\item Built and managed AMOS crowdsourced tasks with Amazon Mechanical Turk
+		\item Developed backend features and optimizations as part of a team
+		\item Django, Python2, JavaScript, Matlab, AWS Mechanical Turk
+	\end{itemize} 
+	\vspace{0.3em}
+	\normalsize \hspace{-3em} \textit{Pedestrian Detection in Webcam Imagery for Public Health Applications} 
+	\vspace{0.2em}
+	\small
+	\begin{itemize}
+		\item Explored use of existing machine learning tools and algorithms for pedestrian detection in webcams
+		\item Improved detection algorithms through background subtraction and shadow detection methods
+	\end{itemize}
+	\vspace{0.3em}
+	\normalsize \hspace{-3em} \textit{Point-and-click Object Manipulation Interface for PR2 Robot} 
+	\vspace{0.2em}
+	\begin{itemize}
+   		\item Developed point-and-click interface for object manipulation for Willow Garage's PR2 robot to allow the PR2 to act a surrogate for a paraplegic user
+		\item Learned about robot functionality and limitations, interface design based on user requirements, and the mathematical concepts of robot visual processing
+		\item Required ROS, Python, C++, Qt framework, OpenCV
+	\end{itemize}
+}
+
+\nocite{*}
+\begingroup
+\setstretch{0.5}
+\setlength\bibitemsep{0.3em}
+\printbibliography[title= Select Publications]
+\endgroup
+
+\section{Outreach and Leadership}
+\vspace{-0.3em}
+\cvitem[0em]{2013}{Invited expert panelist on \textit{"Frameworks to Guide Image Annotations"} at \textit{SenseCam}}
+\cvitem[0em]{2012}{Participated in the PR2 Workshop held in Freiburg, Germany}
+
+
+\end{document}
+
