@@ -28,41 +28,52 @@
 
 \begin{document}
 \makecvtitle
+
+
 \vspace{-3em}
-\section{Objective}
-Seeking Software Developer position in the Seattle, WA area. Python 2 and 3, RESTful API development, full-stack web development, robotics, computer vision.
-
-\vspace{-0.3em}
-\section{Education}
-\vspace{-0.3em}
-\cventry{May 2015}{Master of Science in Computer Science}{}{}{\hfill \textit{NSF Graduate Research Fellow}}{\textit{Washington University in St. Louis}, St. Louis, MO\\ \textbf{Select Coursework:} Mobile Robotics, Computer Vision, Machine Learning}
-\cventry{May 2011}{Bachelor of Science in Computer Science}{}{}{\hfill \textit{cum laude}}{\textit{University of Alabama}, Tuscaloosa, AL \\ \textbf{Minors:} Mathematics, Computer-Based Honors Program, Telecommunication and Film }
-
-\vspace{-0.3em}
 \section{Skills}
 \vspace{-0.3em}
 \cvitem{Languages}{
 \begin{itemize}
 \item \textbf{Native:} English, Polish
-\item \textbf{Proficient:} Python2, Python3, JavaScript, SQL
-\item \textbf{Past:} Matlab, C, C++, bash
+\item \textbf{Proficient:} Python2, Python3, SQL
+\item \textbf{Past:} Matlab, C, C++, bash, JavaScript
 \end{itemize}
 }
 \vspace{-1.2em}
 \cvitem{Frameworks}{Flask, Pyramid, Django, SQLAlchemy, alembic, pytest, pandas, celery}
-\cvitem{Technologies}{PyCharm, git (preferred), SVN, mercurial, *nix, PostgreSQL, RabbitMQ, Redis, Cassandra, Jenkins}
+\cvitem{Technologies}{PyCharm, git (preferred), SVN, mercurial, *nix, PostgreSQL, RabbitMQ, Redis, Cassandra, Jenkins, ansible, Docker, Kubernetes}
 
 \vspace{-0.3em}
 \section{Professional Experience}
 \vspace{-0.3em}
-\cventry{2015-2017}{Software Development Engineer}{Zonar Systems, Inc.}{Seattle, WA}{}{
-\begin{itemize}
-\item Zonar Systems is a vehicle telematics company providing fleet management solutions. Member of Pupil Team, which focused on school bus related solutions for parents, dispatchers, and school administrators.
-\item Built \textit{MyBusVue}, a parent facing web app which provides near-real time bus tracking and student scan information.
-Architected and built \textbf{RESTful API} powering parent-facing web app, Android app, iOS app, as well as dispatcher tools.
-Stack includes \textbf{Python2 (ported to Python3), pyramid, SQLAlchemy, JavaScript, Angular 1.5, celery, Postgres, Cassandra, and Redis}.
-\item Worked on \textit{Rider Verification}, a bus driver and dispatcher facing solution to provide information about where students should be in real-time. Worked on both \textbf{RESTful API} layer and \textbf{ETL} process to ingest data from multiple sources (internal and external integration). Stack includes \textbf{Python3, flask, SQLAlchemy, Postgres, Angular 1.6, pandas}.
-\end{itemize}
+\cventry{2015-2017}{Software Development Engineer (Pupil Team)}{Zonar Systems, Inc.}{Seattle, WA}{}{
+	\vspace{-0.5em}
+	\normalsize \hspace{-3em} \textit{Rider Verification/Route Board: bus driver/dispatcher facing solution providing feedback on student location}
+	\vspace{-0.9em}
+	\small
+	\begin{itemize}
+		\item Acting lead in MVP/Beta phase, with positive feedback both internally and from Beta customer
+		\item Assisted Product Owner in trimming scope for an on-time delivery of MVP
+		\item Coordinated with Android contracting team on technical prerequisites and feasibility of requested features
+		\item Routinely used as test project/team for evaluation of new products, technologies, and processes
+		\item Greenfield project where team owned setup, maintenance, and all work on both infrastructure and software
+		\item Key member of effort to move product to the cloud Google Cloud Platform, Docker, Kubernetes)
+		\item Worked on both RESTful API layer and ETL process to ingest data from internal and external sources
+		\item Stack includes Python3, flask, SQLAlchemy, Postgres, Angular 1.5, pandas, Jenkins, ansible
+		\item First product at Zonar to have >75\% test coverage for core components, CI/CD pipeline
+	\end{itemize}
+	\vspace{0.3em}
+	\normalsize \hspace{-3em} \textit{MyBusVue: a parent facing web app which provides near-real time bus tracking and student scan information}
+	\vspace{-0.8em}
+	\small
+	\begin{itemize}
+		\item Inherited legacy codebase developed by 3rd party
+		\item Team rearchitected, rebuilt underlying RESTful API and backend services, aiming for stability and testability
+		\item First product at Zonar to have automated functional, unit, performance, and E2E tests
+		\item Python2 (ported to Python3), pyramid, SQLAlchemy, JavaScript, Angular 1.5, celery, rabbitMQ, Postgres, Cassandra, and Redis
+	\end{itemize}
+	\vspace{0.2em}
 }
 
 \cventry{2011-2015}{Graduate Research Assistant}{Washington Univ. in St. Louis}{}{}{
@@ -87,12 +98,20 @@ Stack includes \textbf{Python2 (ported to Python3), pyramid, SQLAlchemy, JavaScr
 	\vspace{0.3em}
 	\normalsize \hspace{-3em} \textit{Point-and-click Object Manipulation Interface for PR2 Robot} 
 	\vspace{0.2em}
+	\small
 	\begin{itemize}
    		\item Developed point-and-click interface for object manipulation for Willow Garage's PR2 robot to allow the PR2 to act a surrogate for a paraplegic user
 		\item Learned about robot functionality and limitations, interface design based on user requirements, and the mathematical concepts of robot visual processing
 		\item Required ROS, Python, C++, Qt framework, OpenCV
 	\end{itemize}
 }
+
+
+\vspace{-0.3em}
+\section{Education}
+\vspace{-0.3em}
+\cventry{May 2015}{Master of Science in Computer Science}{}{}{\hfill \textit{NSF Graduate Research Fellow}}{\textit{Washington University in St. Louis}, St. Louis, MO\\ \textbf{Select Coursework:} Mobile Robotics, Computer Vision, Machine Learning}
+\cventry{May 2011}{Bachelor of Science in Computer Science}{}{}{\hfill \textit{cum laude}}{\textit{University of Alabama}, Tuscaloosa, AL \\ \textbf{Minors:} Mathematics, Computer-Based Honors Program, Telecommunication and Film }
 
 \vspace{-0.3em}
 \nocite{*}
