@@ -17,15 +17,14 @@
                 
 %\photo[64pt][0.4pt]{example-image-a}              
                        
-\renewcommand*{\cventry}[7][.25em]{%
+\renewcommand*{\cventry}[6][.25em]{%
   \cvitem[#1]{#2}{%
     {\bfseries#3}%
     \ifthenelse{\equal{#4}{}}{}{ \hfill{\slshape#4}}%
-    \ifthenelse{\equal{#5}{}}{}{ #5}%
-    \ifthenelse{\equal{#6}{}}{}{ #6}%
+    \ifthenelse{\equal{#5}{}}{}{ \hspace{0.5em} #5}%
     \strut%
-    \ifx&#7&%
-      \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
+    \ifx&#6&%
+      \else{\newline{}\begin{minipage}[t]{\linewidth}\small#6\end{minipage}}\fi}}
 
 \begin{document}
 \makecvtitle
@@ -43,41 +42,41 @@
 }
 \vspace{-1.2em}
 \cvitem{Frameworks}{Flask, Pyramid, Django, SQLAlchemy, alembic, pytest, pandas, celery}
-\cvitem{Technologies}{PyCharm, git (preferred), SVN, mercurial, *nix, PostgreSQL, RabbitMQ, Redis, Cassandra, Jenkins, ansible, Docker, Kubernetes}
+\cvitem{Technologies}{PyCharm, git (preferred), SVN, mercurial, *nix, PostgreSQL, SQLAlchemy, RabbitMQ, Redis, Cassandra, Jenkins, ansible, Docker, Kubernetes}
 
 \vspace{-0.3em}
 \section{Professional Experience}
 \vspace{-0.3em}
-\cventry{2015-2017}{Software Development Engineer (Pupil Team)}{Zonar Systems, Inc.}{Seattle, WA}{}{
+\cventry{2015-2017}{Software Development Engineer (Pupil Team)}{Zonar Systems, Inc.}{Seattle, WA}{
 	\vspace{-0.5em}
-	\normalsize \hspace{-3em} \textit{Rider Verification/Route Board: bus driver/dispatcher facing solution providing feedback on student location}
+	\normalsize \hspace{-3em} \textit{Rider Verification/Route Board: bus driver/dispatcher-facing solution providing feedback on student location}
 	\vspace{-0.9em}
 	\small
 	\begin{itemize}
 		\item Greenfield project where team owned setup, maintenance, and all work on both infrastructure and software
-		\item Acting lead in MVP/Beta phase, with positive feedback both internally and from Beta customer
-		\item Assisted Product Owner in trimming scope for an on-time delivery of MVP
+		\item Acting technical lead in MVP/Beta phase, with positive feedback both internally and from Beta customer
+		\item Worked with Product Owner to trim scope for an on-time delivery of MVP
+		\item Key member of ongoing effort to move product to the cloud (\textbf{Google Cloud Platform, Docker, Kubernetes})
 		\item Coordinated with Android contracting team on technical prerequisites and feasibility of requested features
-		\item Routinely used as test project/team for evaluation of new products, technologies, and processes
-		\item Key member of effort to move product to the cloud (Google Cloud Platform, Docker, Kubernetes)
 		\item Worked on both RESTful API layer and ETL process to ingest data from internal and external sources
-		\item Stack includes Python3, flask, SQLAlchemy, Postgres, Angular 1.5, pandas, Jenkins, ansible
+		\item Routinely served as test project/team for evaluation of new products, technologies, and processes
 		\item First product at Zonar to have >75\% test coverage for core components, CI/CD pipeline
+		\item Stack includes \textbf{Python3, flask, SQLAlchemy, Postgres, Angular 1.5, pandas, Jenkins, ansible}
 	\end{itemize}
 	\vspace{0.3em}
-	\normalsize \hspace{-3em} \textit{MyBusVue: a parent facing web app which provides near-real time bus tracking and student scan information}
+	\normalsize \hspace{-3em} \textit{MyBusVue: a parent-facing web app which provides near-real time bus tracking and student scan information}
 	\vspace{-0.8em}
 	\small
 	\begin{itemize}
 		\item Inherited legacy codebase developed by 3rd party
-		\item Team rearchitected, rebuilt underlying RESTful API and backend services, aiming for stability and testability
+		\item Team re-architected, rebuilt underlying RESTful API and backend services, aiming for stability and testability
 		\item First product at Zonar to have automated functional, unit, performance, and E2E tests
-		\item Python2 (ported to Python3), pyramid, SQLAlchemy, JavaScript, Angular 1.5, celery, rabbitMQ, Postgres, Cassandra, and Redis
+		\item \textbf{Python2} (ported to Python3), \textbf{pyramid, SQLAlchemy, JavaScript, Angular 1.5, celery, rabbitMQ, Postgres, Cassandra, Redis}
 	\end{itemize}
 	\vspace{0.2em}
 }
 
-\cventry{2011-2015}{Graduate Research Assistant}{Washington Univ. in St. Louis}{}{}{
+\cventry{2011-2015}{Graduate Research Assistant}{WUSTL}{St. Louis, MO}{
 	\vspace{-0.5em}
 	\normalsize \hspace{-3em} \textit{Archive of Many Outdoor Scenes (AMOS) Development}
 	\vspace{0.2em}
@@ -86,7 +85,7 @@
 		\item Worked AMOS, the world's largest archive of outdoor webcams, which contains over 500 million images
 		\item Built and managed AMOS crowdsourced tasks with Amazon Mechanical Turk
 		\item Developed backend features and optimizations as part of a team
-		\item Django, Python2, JavaScript, Matlab, AWS Mechanical Turk
+		\item \textbf{Django, Python2, JavaScript, Matlab, AWS Mechanical Turk}
 	\end{itemize} 
 	\vspace{0.3em}
 	\normalsize \hspace{-3em} \textit{Pedestrian Detection in Webcam Imagery for Public Health Applications} 
@@ -103,7 +102,7 @@
 	\begin{itemize}
    		\item Developed point-and-click interface for object manipulation for Willow Garage's PR2 robot to allow the PR2 to act a surrogate for a paraplegic user
 		\item Learned about robot functionality and limitations, interface design based on user requirements, and the mathematical concepts of robot visual processing
-		\item Required ROS, Python, C++, Qt framework, OpenCV
+		\item \textbf{ROS, Python, C++, Qt framework, OpenCV}
 	\end{itemize}
 }
 
@@ -111,8 +110,8 @@
 \vspace{-0.3em}
 \section{Education}
 \vspace{-0.3em}
-\cventry{May 2015}{Master of Science in Computer Science}{}{}{\hfill \textit{NSF Graduate Research Fellow}}{\textit{Washington University in St. Louis}, St. Louis, MO\\ \textbf{Select Coursework:} Mobile Robotics, Computer Vision, Machine Learning}
-\cventry{May 2011}{Bachelor of Science in Computer Science}{}{}{\hfill \textit{cum laude}}{\textit{University of Alabama}, Tuscaloosa, AL \\ \textbf{Minors:} Mathematics, Computer-Based Honors Program, Telecommunication and Film }
+\cventry{May 2015}{Master of Science in Computer Science}{NSF Graduate Research Fellow}{}{\textit{Washington University in St. Louis (WUSTL)}, St. Louis, MO\\ \textbf{Select Coursework:} Mobile Robotics, Computer Vision, Machine Learning}
+\cventry{May 2011}{Bachelor of Science in Computer Science}{cum laude}{}{\textit{University of Alabama}, Tuscaloosa, AL \\ \textbf{Minors:} Mathematics, Computer-Based Honors Program, Telecommunication and Film }
 
 \vspace{-0.3em}
 \nocite{*}
